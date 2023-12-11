@@ -1,4 +1,12 @@
-const arr = [89, 77, 67, 53, 34];
+var arr= [89, 77, 67, 53, 34];
+
+//for custom prompt
+//  var arr =[];
+// for(var i=0; i<5; i++) {
+	
+// 	//Taking Input from user
+// 	arr[i] = prompt('Enter Element ' + (i+1));
+// }
 
 console.log(arr);
 
@@ -44,5 +52,9 @@ function bubbleSort(i) {
 
 window.onload = function () {
     pb = document.getElementsByClassName("progress-bar");
-    bubbleSort(0);
+    setPB();
 };
+
+document.getElementById("button").addEventListener("click" , function(){
+    bubbleSort(0);
+})
